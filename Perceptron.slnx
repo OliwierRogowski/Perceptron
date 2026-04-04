@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Perceptron/Perceptron.vcxproj" Id="a10c90cf-d903-4aab-bd65-1f61131d9ec9" />
+</Solution>
