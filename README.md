@@ -1,6 +1,6 @@
 # PERCEPTRON
 
-[![C++](https://img.shields.io/badge/C++-17-blue.svg)](https://isocpp.org/)
+[![C++](https://img.shields.io/badge/C++-20-blue.svg)](https://isocpp.org/)
 [![Eigen](https://img.shields.io/badge/Library-Eigen-orange.svg)](https://eigen.tuxfamily.org/)
 [![Philosophy](https://img.shields.io/badge/Philosophy-No%20Black%20Boxes-red.svg)](#)
 
