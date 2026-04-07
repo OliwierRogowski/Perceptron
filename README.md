@@ -1,22 +1,9 @@
-# PERCEPTRON
+# Perceptron Classifier (C++)
+## Overview
+This project is an implementation of Rosenblatt's Perceptron, a fundamental supervised learning algorithm used for binary classification. The Implementation utilizes the Eigen library for efficient linear algebra operations.
+The modle is specifically designed to demonstrate the learning process on linearly separable datasetsm such as the famous Iris Flower Dataset.
 
-[![C++](https://img.shields.io/badge/C++-20-blue.svg)](https://isocpp.org/)
-[![Eigen](https://img.shields.io/badge/Library-Eigen-orange.svg)](https://eigen.tuxfamily.org/)
-[![Philosophy](https://img.shields.io/badge/Philosophy-No%20Black%20Boxes-red.svg)](#)
-
-A mathematical implementation of a **Multi-Layer Perceptron (MLP)** built from absolute scratch. This project is a part of my "No Black Boxes" journey, where I implement core AI algorithms using only **C++** and **Linear Algebra** to fully grasp the underlying mechanics of machine learning.
-
-## 🚀 Key Features
-- **Pure C++ Implementation:** No reliance on heavy frameworks like PyTorch or TensorFlow.
-- **Matrix Operations via Eigen:** High-performance linear algebra for weight updates and forward passes.
-- **Manual Backpropagation:** Custom implementation of the training loop and gradient descent.
-- **Dynamic Architecture:** Ability to define any network topology (input, hidden layers, output).
-- **MNIST-Ready:** Designed to handle complex classification tasks like handwritten digit recognition.
-
-## 🏗️ Technical Deep Dive
-The engine implements a standard feed-forward architecture with a Sigmoid activation function. The training process uses the **Chain Rule** to propagate errors back through the network:
-
-```cpp
-// Manual Gradient Calculation in my code:
-Eigen::VectorXd delta = (target - output).array() * output.array() * (1.0 - output.array());
-// ... followed by weight and bias updates
+## Core Logic and Features
+The implementation follows the classi artiffical neuron model:
+  1. Weight initialization: Weights are initialized with small and ranodm values using normal distribiution with seed to prevent symmetry and get same result every time when user turn on model
+  2. Learing rule: The model updates weights based on error between the predicted label and acual label. It's famous formula: $$\Delta w = \eta \cdot (target - predicted) \cdot x$$
